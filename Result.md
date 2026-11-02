@@ -1,5 +1,6 @@
 Results
 
+
 All runs on one machine (PostgreSQL, JDBC, isolation level READ COMMITTED).
 Times vary from run to run, because deadlocks depend on timing.
 
@@ -10,7 +11,7 @@ Light load: 30 tasks, 3 queries per task, 4 threads
 | 1 | 10818 | 12 | 3843 | 0 | 0 |
 | 2 | 19470 | 9 | 6479 | 0 | 0 |
 | 3 | 4485 | 3 | 8582 | 5 | 2 |
-| **Average** | **11591** | **8** | **6301** | **1.7** | **max 2** |
+| Average | 11591 | 8 | 6301 | 1.7 | max 2 |
 
 All runs finished 30 of 30 tasks.
 
