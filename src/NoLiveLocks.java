@@ -89,7 +89,9 @@ public class NoLiveLocks {
         BUFFERED_OUTPUT   // console output buffered instead of one write per line
     }
 
-    /** The fixes that the original "optimized" flag switched on. */
+    /**
+     * The fixes that the original "optimized" flag switched on.
+     */
     static final EnumSet<Fix> OPTIMIZED_FIXES =
             EnumSet.of(Fix.SYNC_COMMIT_OFF, Fix.PARALLEL, Fix.FILLFACTOR);
 
@@ -136,7 +138,7 @@ public class NoLiveLocks {
      * Normal WRITE attempts share the read lock.
      * A WRITE transaction that reaches the retry limit takes
      * the exclusive write lock and runs alone.
-     *
+     * <p>
      * Fair mode prevents new attempts from continually overtaking
      * a transaction waiting for exclusive access.
      */
